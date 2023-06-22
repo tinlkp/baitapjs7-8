@@ -80,7 +80,7 @@ function soDuongNhoNhat() {
 
 function soChanCuoiCung() {
     var soChan = "";
-    for (var i = 0; i < listNumer.length; i++) {
+    for (var i = 0; i < listNumer.length-1; i++) {
         if (listNumer[i] % 2 === 0) {
             soChan = listNumer[i];
         } else {
