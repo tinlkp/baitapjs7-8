@@ -15,31 +15,55 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
+
         <div class="card">
           <div class="card-header">Bài tập</div>
           <div class="card-body">
             <div class="form-group">
               <label>Nhập số:</label>
-              <p>
-                <input type="text" name="" id="txtNumber" placeholder="" aria-describedby="helpId">
-                <button onclick="themSo()">Thêm số</button>
-              </p>
 
+              <input type="text" name="" id="txtNumber" placeholder="" aria-describedby="helpId">
+              <button onclick="themSo()">Thêm số</button>
+              <button onclick="thayDoiViTri()">Thay đổi vị trí</button>
+              <button onclick="sapXepTangDan()">Sắp xếp lại thứ tự tăng dần</button>
+            </div>
+            <div>
+              <label> Vị trí cần thay đổi: </label>
+              <input type="text" class="input-change" id="vitri1" placeholder="vị trí 1">
+              <input type="text" class="input-change" id="vitri2" placeholder="vị trí 2"> 
+              <label> Mảng số thực: </label>
+              <input type="text" id="mangSoThuc" placeholder="Mảng số thực">
+              <button class="btn-warning" onclick="themSoThuc()">Thêm số thực</button>
+            </div>
+            <div>
               <button class="btn btn-success" onclick="tongSoDuong()">Tổng số dương</button>
-              <button class="btn btn-success" onclick="soDuong()">Tổng số dương</button>
+              <button class="btn btn-success" onclick="soDuong()">Số Lượng số dương</button>
+              <button class="btn btn-success" onclick="soNhoNhat()">Số nhỏ nhất</button>
+              <button class="btn btn-success" onclick="soDuongNhoNhat()">Số dương nhỏ nhất</button>
+              <button class="btn btn-info" onclick="soChanCuoiCung()">Số chẳn cuối cùng</button>
+              <button class="btn btn-dark" onclick="soNguyenToDauTien()">Số nguyên tố đầu tiên</button>
+              <button class="btn btn-dark" onclick="timSoNguyen()">Số nguyên</button>
+              <button class="btn btn-dark" onclick="soSanhSoAmVaDuong()">So sánh số</button>
+              
 
             </div>
+
           </div>
           <div class="card-footer text-muted">
+            <div id="hienThiSoDaNhap"></div>
+            <div id="hienThiSoThuc"></div>
             <div id="hienThiTongSoDuong"></div>
             <div id="hienThiSoDuong"></div>
+            <div id="hienThiSoNhoNhat"></div>
+            <div id="hienThiSoDuongNhoNhat"></div>
+            <div id="hienThiSoNguyenToDauTien"></div>
+            <div id="hienThiSoNguyen"></div>
+            <div id="hienThiSoLuongSoAm"></div>
+            <div id="hienThiSoSanhSo"></div>
           </div>
         </div>
 
-      </div>
-    </div>
+
   </div>
 
 
